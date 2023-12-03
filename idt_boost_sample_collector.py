@@ -69,10 +69,10 @@ def main():
     step_config = config["IDT_BOOST_SAMPLE_COLLECTOR"]
 
     wes_sample_path = os.path.join(
-        ROOT_DIR, "data", step_config["WES_SAMPLE_FILENAME"]
+        ROOT_DIR, config["DATA_DIR"], step_config["WES_SAMPLE_FILENAME"]
     )
     output_path = os.path.join(
-        ROOT_DIR, "data", step_config["IDT_BOOST_SAMPLE_FILENAME"]
+        ROOT_DIR, config["DATA_DIR"], step_config["IDT_BOOST_SAMPLE_FILENAME"]
     )
 
     collect_idt_boost_samples(wes_sample_path, output_path)
