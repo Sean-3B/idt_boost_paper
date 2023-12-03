@@ -1,0 +1,4 @@
+data/
+logs/
+result_backup/
+__pycache__/
